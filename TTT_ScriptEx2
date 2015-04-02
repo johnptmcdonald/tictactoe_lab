@@ -1,0 +1,47 @@
+// VARIABLES
+
+var human = 'x'; // turn = 0
+var computer = 'o'; // turn = 1
+var compMove;
+var turn = 0; // toggles btw 0 and 1 for switching turns
+
+var boardCheck; // function to check value in each cell
+var a1; // value within each cell
+var a2;
+var a3;
+var b1;
+var b2;
+var b3;
+var c1;
+var c2;
+var c3;
+
+var checkWin; // function that checks the board for winning combo
+var xWin = false; // true if X wins 
+var oWin = false; // true if O wins 
+var winAlert; // function that declares winner and restarts game
+
+var newGame;
+var clearBoard;
+
+
+// PLACES AN X OR O IN THE BOX WHEN CLICKED. TOGGLES. 
+var newGame = function () {
+    $('td').one('click', function (event) {
+        if (turn == 0) {
+            $(this).text(human);
+            boardCheck();
+            checkWin();
+            turn == 1;
+            compMove();
+            boardCheck();
+            checkWin();
+        }
+    });
+};
+
+
+// INITIALIZES GAME - keep after var newGame
+$(document).ready(function () {
+    newGame();
+});

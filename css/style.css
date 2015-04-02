@@ -1,0 +1,118 @@
+* {
+	border: 1px yellow solid;
+}
+
+header {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 60px;
+}
+
+h1 {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 65pt;
+}
+
+#container {
+	border: 5px orange solid;
+	position: relative;
+	width: 1400px;
+	height: 800px;
+	/*width: 980px;
+	height: 800px;*/
+	margin: 0 auto;
+}
+
+	#container input {
+		position: absolute;
+		bottom:20px;
+		left:25px;
+		height:30px;
+		width:200px;
+	}
+
+#game_container {
+	position: relative;
+	margin: 0 auto;
+	height: 500px;
+	width: 500px;
+	top: 100px;
+	font-family: helvetica;
+	font-size: 20px;
+	text-align: center;
+}
+
+.cell {
+	position: relative;
+	float: left;
+	background-color: dodgerblue;
+	opacity: .5;
+	width: 155px;
+	height: 155px;
+	border-radius: 25px
+}
+
+#player1display {
+	float: left;
+	width: 24%;
+	height: 100%;
+	opacity: .4;
+	background-color: black;
+}
+
+#player2display {
+	float: right;
+	width: 24%;
+	height: 100%;
+	opacity: .5;
+	background-color: black;
+}
+
+/*.x_occupied {
+	font-size: 180px;
+	text-align:center;
+    left: 0;
+    right: 0;
+    margin-top: 40px;
+    line-height: 100%;        the same as your div height
+}*/
+
+/*#cell1 {
+	occupied: false;
+}
+#cell2 {}
+#cell3 {}
+#cell4 {}
+#cell5 {}
+#cell6 {}
+#cell7 {}
+#cell8 {}
+#cell9 {}*/
+
+/*#gameplay {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	margin: 0 auto;
+}*/
+/*#gameboard {
+	width: 800px;
+	height: 600px;
+	background-color: dodgerblue;
+	margin: 40px auto;
+}*/
+
+/*Main columns should be max ~ 267px*/
+
+/*#gameboard {
+	z-index: 1;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-image: url("../images/TTT_Board_Main1.jpg");
+	background-size: contain;
+	background-position: center;
+	margin: 40px auto;
+	background-repeat: no-repeat;
+}*/
