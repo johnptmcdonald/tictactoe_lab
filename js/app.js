@@ -1,3 +1,21 @@
+// WIN LOGIC
+//
+
+self.Board[index].occupied = currentIcon
+
+// Horizontal from left to right and top to bottom for X
+if self.Board[0].occupied = 'X' && self.Board[4].occupied = 'X' && self.Board[7].occupied = 'X'
+if self.Board[1].occupied = 'X' && self.Board[5].occupied = 'X' && self.Board[8].occupied = 'X'
+if self.Board[2].occupied = 'X' && self.Board[6].occupied = 'X' && self.Board[9].occupied = 'X'
+
+
+function getWinner(
+if self.Board[0].occupied = 'X' && self.Board[4].occupied = 'X' && self.Board[7].occupied = 'X'
+if self.Board[1].occupied = 'X' && self.Board[5].occupied = 'X' && self.Board[8].occupied = 'X'
+if self.Board[2].occupied = 'X' && self.Board[6].occupied = 'X' && self.Board[9].occupied = 'X') {
+	console.log(X WINS!!!!!)
+}
+
 // VARIABLES
 
 var playerX = 'playerX'; // turn = 0
@@ -52,9 +70,9 @@ function cell2Move() {
 if numberOfMoves%2 = 0 { currentPlayer = playerOturn }
 
 playerX
-playerO 
+playerO
 
-function numberOfMoves 
+function numberOfMoves
 for each gameMove, numberOfMoves +=1
 
 function singleMove(){
@@ -83,7 +101,7 @@ else
 
 
 function getWinner(){
-	document.getElementById('cell1').value == "X" && 
+	document.getElementById('cell1').value == "X" &&
 	document.getElementById('cell1').value == "X"
 }{alert("THE WINNER IS X!")}
 
@@ -129,7 +147,7 @@ Player one place marker
 getElementByClass("cell")
 - add eventListener / or ng-click
 
-If void, change to occupied 
+If void, change to occupied
 
 Player two place marker
 
@@ -140,7 +158,7 @@ Declare "player#" as winner
 
 Clear board : function
 
-moveCount 
+moveCount
 
 Start game
 
@@ -174,6 +192,26 @@ cell 3 == cell 6 == cell 9
 // Diagonal wins
 cell 1 == cell 5 == cell 9
 cell 3 == cell 5 == cell 7
+
+
+// Create a claimCell function : This one works
+self.click = function(index) {
+	self.Board[index].occupied = currentIcon;
+	numberOfMoves = numberOfMoves + 1
+	changePlayers()
+	iconDefine()
+	console.log('xxx')
+}
+
+
+function getWinner() {
+	if (self.Board[0].occupied = 'X' &&
+		self.Board[1].occupied = 'X' &&
+		self.Board[2].occupied = 'X')
+	{
+		console.log(X WINS!)
+	}
+};
 
 // Detect a win ; and secondarily - Have player's nickname equal each cell's occupancy
 
@@ -215,7 +253,7 @@ var board = [
 
 // Player A Occupies a cell
 
-function changeSquare(){ 
+function changeSquare(){
 	occupied = '{{ players.Name }}'
 };
 

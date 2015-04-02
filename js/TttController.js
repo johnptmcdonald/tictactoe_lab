@@ -9,6 +9,7 @@
 			var playerX = 'playerX';
 			var playerO = 'playerO';
 			var currentPlayer = 'playerX';
+			var currentIcon = 'X';
 			var numberOfMoves = 0;
 
 //an array of 9 objects (cells), each with 5 properties/keys
@@ -32,17 +33,20 @@ if (currentPlayer == 'playerX') {currentPlayer = 'playerO'}
 else {currentPlayer = 'playerX'}
 };
 
-// function chooseIcon() {
-// if (currentPlayer == 'playerX') {currentPlayer = 'playerO'}
-// else {currentPlayer = 'playerX'}
-// };
+function iconDefine() {
+if (currentPlayer == 'playerX') {currentIcon = 'X'}
+else {currentIcon = 'O'}
+};
+
+// Function to get winner - new and experimental
 
 // Create a claimCell function : This one works
-self.click = function(index) {
-	self.Board[index].occupied = currentPlayer;
+self.click = function(index) {if (self.Board[index].occupied == null){
+	self.Board[index].occupied = currentIcon;
 	numberOfMoves = numberOfMoves + 1
 	changePlayers()
-	console.log('xxx')
+	iconDefine()
+	console.log('xxx') }
 }
 
 		// function claimCell() {
