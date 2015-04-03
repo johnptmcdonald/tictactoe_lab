@@ -3,14 +3,18 @@
 <head>
 	<link rel="stylesheet" href="css/normalize.css">
     	<link rel="stylesheet" href="css/style.css">
-	<title>Moo's Tic-Tac-Toe</title>
+	<title>DJ Tic-Tac-Toe</title>
 </head>
 <header></header>
 <body>
 <div id="container">
-	<h1>Moo's Tic-Tac-Toe</h1>
+	<h1>DJ Tic-Tac-Toe</h1>
 
+	<div id="inner_container">
 	<div id="player1display">
+		<h1>Sean</h1>
+		<p>Games Won:</p>
+		<h2>0</h2>
 		<input type="text">
 	</div>
 
@@ -19,10 +23,12 @@
 	</div>
 
 	<div id="game_container" ng-controller="TttController as ttt">
+
 		<div class="cell"  ng-repeat="cell in ttt.Board" ng-click="ttt.click($index)">
 			{{cell.occupied}}
 		</div>
 
+	</div>
 	</div>
 
 	<!--Sourcing Angular-->
@@ -32,6 +38,6 @@
 	<!-- Source in controller -->
 	<script type="text/javascript" src="js/TttController.js"></script>
 	<!-- Source in customer filter -->
-
+</div>
 </body>
 </html>

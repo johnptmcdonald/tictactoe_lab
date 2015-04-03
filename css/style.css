@@ -1,6 +1,9 @@
-* {
+/** {
 	border: 1px yellow solid;
 }
+
+body {
+}*/
 
 header {
 	margin: 0 auto;
@@ -17,6 +20,7 @@ h1 {
 #container {
 	border: 5px orange solid;
 	position: relative;
+	overflow: hidden;
 	width: 1400px;
 	height: 800px;
 	/*width: 980px;
@@ -24,13 +28,19 @@ h1 {
 	margin: 0 auto;
 }
 
-	#container input {
+/*	#container input {
 		position: absolute;
 		bottom:20px;
-		left:25px;
+		left:66px;
 		height:30px;
 		width:200px;
-	}
+	}*/
+
+#inner_container {
+	height: 100%;
+	width: 100%;
+	background-color: #DADFE1;
+}
 
 #game_container {
 	position: relative;
@@ -45,10 +55,12 @@ h1 {
 .cell {
 	position: relative;
 	float: left;
-	background-color: dodgerblue;
+	background-color: black;
+	color: white;
 	opacity: .5;
 	width: 155px;
 	height: 155px;
+	border: 4px red solid;
 	border-radius: 25px;
 	font-size: 115px;
 	text-align: center;
@@ -60,15 +72,60 @@ h1 {
 	float: left;
 	width: 24%;
 	height: 100%;
-	opacity: .4;
+	background-position: relative;
+	background-image: url("../images/Jukebox_4_M4.jpg");
+	/*background-size: cover;*/
+	background-repeat: no-repeat;
+	border: 2px #95a5a6 solid;
+	opacity: .9;
 	background-color: black;
+}
+
+#player1display h1 {
+	display: block;
+	font-size: 80px;
+	color: white;
+	text-align: center;
+	margin-top: 200px;
+	margin-bottom: 0px;
+}
+
+#player1display h2 {
+	display: block;
+	font-size: 75px;
+	color: white;
+	text-align: center;
+	margin-top: 63px;
+	margin-bottom: 0px;
+}
+
+#player1display p {
+	display: block;
+	font-size: 32px;
+	color: white;
+	text-align: center;
+	margin-top: 19px;
+}
+
+#player1display input {
+	position: relative;
+	/*bottom:0px;*/
+	margin-top: 190px;
+	margin-left: 70px;
+	height:30px;
+	width:200px;
 }
 
 #player2display {
 	float: right;
 	width: 24%;
 	height: 100%;
-	opacity: .5;
+	background-position: relative;
+	background-image: url("../images/Jukebox_4_M4.jpg");
+	/*background-size: cover;*/
+	background-repeat: no-repeat;
+	border: 2px #95a5a6 solid;
+	opacity: .9;
 	background-color: black;
 }
 

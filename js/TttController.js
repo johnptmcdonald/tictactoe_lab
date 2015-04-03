@@ -25,9 +25,9 @@
 				{occupied: null},
 			]; // End of array; Each cell has a index number e.g. Board[0]
 
-// Declare that turns alternate between playerX and playerO. If numberOfMoves is even, playerO is currentPlayer
-// function defineCurrentPlayer {
-	// if (numberOfMoves%2 = 0) { currentPlayer = playerO } else { currentPlayer = playerX };
+
+
+// Below is function to change active player
 function changePlayers() {
 if (currentPlayer == 'playerX') {currentPlayer = 'playerO'}
 else {currentPlayer = 'playerX'}
@@ -38,16 +38,39 @@ if (currentPlayer == 'playerX') {currentIcon = 'X'}
 else {currentIcon = 'O'}
 };
 
-// Function to get winner - new and experimental
-
 // Create a claimCell function : This one works
 self.click = function(index) {if (self.Board[index].occupied == null){
 	self.Board[index].occupied = currentIcon;
 	numberOfMoves = numberOfMoves + 1
+	// checkWinner()
 	changePlayers()
 	iconDefine()
 	console.log('xxx') }
 }
+
+// Trying another function to check winner
+
+// function checkWinner() {
+// 	if (self.Board[0].occupied == 'X' &&
+// 	self.Board[1].occupied == 'X' &&
+// 	self.Board[2].occupied == 'X') {
+// 		console.log(X WINS!!!!!!!!!)
+// 	}
+// };
+
+
+// Function to get winner - new and experimental
+
+ // function getWinner(){
+ // 	if (self.Board[0].occupied == 'X' &&
+ // 		self.Board[3].occupied == 'X' &&
+ // 		self.Board[6].occupied == 'X') {
+	// console.log(X WINS!!!!!!!!!)
+ // 	}
+ // };
+
+
+
 
 		// function claimCell() {
 		// 	var cell = self.TttBoard[$index];
