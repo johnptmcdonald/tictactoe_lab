@@ -178,21 +178,89 @@ addl : on Hover change appearance of box
 addl : Player One choose icon / Player Two choose icon
 note: X = blue, O = red
 
+// Function checkWinner Draft - is working
+function checkWinner() {
+	if (self.Board[0].occupied == 'X' &&
+	self.Board[1].occupied == 'X' &&
+	self.Board[2].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[3].occupied == 'X' &&
+	self.Board[4].occupied == 'X' &&
+	self.Board[5].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[6].occupied == 'X' &&
+	self.Board[7].occupied == 'X' &&
+	self.Board[8].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[0].occupied == 'O' &&
+	self.Board[1].occupied == 'O' &&
+	self.Board[2].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	} else if (self.Board[3].occupied == 'O' &&
+	self.Board[4].occupied == 'O' &&
+	self.Board[5].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	} else if (self.Board[6].occupied == 'O' &&
+	self.Board[7].occupied == 'O' &&
+	self.Board[8].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	} else if (self.Board[0].occupied == 'X' &&
+	self.Board[3].occupied == 'X' &&
+	self.Board[6].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[1].occupied == 'X' &&
+	self.Board[4].occupied == 'X' &&
+	self.Board[7].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[2].occupied == 'X' &&
+	self.Board[5].occupied == 'X' &&
+	self.Board[8].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[0].occupied == 'O' &&
+	self.Board[3].occupied == 'O' &&
+	self.Board[6].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	} else if (self.Board[1].occupied == 'O' &&
+	self.Board[4].occupied == 'O' &&
+	self.Board[7].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	} else if (self.Board[2].occupied == 'O' &&
+	self.Board[5].occupied == 'O' &&
+	self.Board[8].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	} else if (self.Board[0].occupied == 'X' &&
+	self.Board[4].occupied == 'X' &&
+	self.Board[8].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[2].occupied == 'X' &&
+	self.Board[4].occupied == 'X' &&
+	self.Board[6].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[0].occupied == 'O' &&
+	self.Board[4].occupied == 'O' &&
+	self.Board[8].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	} else if (self.Board[2].occupied == 'O' &&
+	self.Board[4].occupied == 'O' &&
+	self.Board[6].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	}
+};
+
 Ways to win:
 // Horizontal wins from top to bottom
-cell 1 == cell 2 == cell 3
-cell 4 == cell 5 == cell 6
-cell 7 == cell 8 == cell 9
+cell 0 == cell 1 == cell 2
+cell 3 == cell 4 == cell 5
+cell 6 == cell 7 == cell 8
 
 // Vertical wins from left to right
+cell 0 == cell 3 == cell 6
 cell 1 == cell 4 == cell 7
 cell 2 == cell 5 == cell 8
-cell 3 == cell 6 == cell 9
 
 // Diagonal wins
-cell 1 == cell 5 == cell 9
-cell 3 == cell 5 == cell 7
-
+cell 0 == cell 4 == cell 8
+cell 2 == cell 4 == cell 6
 
 // Create a claimCell function : This one works
 self.click = function(index) {

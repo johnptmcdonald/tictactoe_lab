@@ -26,7 +26,6 @@
 			]; // End of array; Each cell has a index number e.g. Board[0]
 
 
-
 // Below is function to change active player
 function changePlayers() {
 if (currentPlayer == 'playerX') {currentPlayer = 'playerO'}
@@ -38,33 +37,95 @@ if (currentPlayer == 'playerX') {currentIcon = 'X'}
 else {currentIcon = 'O'}
 };
 
+// Trying another function to check winner
+
+function checkWinner() {
+	if (self.Board[0].occupied == 'X' &&
+	self.Board[1].occupied == 'X' &&
+	self.Board[2].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[3].occupied == 'X' &&
+	self.Board[4].occupied == 'X' &&
+	self.Board[5].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[6].occupied == 'X' &&
+	self.Board[7].occupied == 'X' &&
+	self.Board[8].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[0].occupied == 'O' &&
+	self.Board[1].occupied == 'O' &&
+	self.Board[2].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	} else if (self.Board[3].occupied == 'O' &&
+	self.Board[4].occupied == 'O' &&
+	self.Board[5].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	} else if (self.Board[6].occupied == 'O' &&
+	self.Board[7].occupied == 'O' &&
+	self.Board[8].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	} else if (self.Board[0].occupied == 'X' &&
+	self.Board[3].occupied == 'X' &&
+	self.Board[6].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[1].occupied == 'X' &&
+	self.Board[4].occupied == 'X' &&
+	self.Board[7].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[2].occupied == 'X' &&
+	self.Board[5].occupied == 'X' &&
+	self.Board[8].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[0].occupied == 'O' &&
+	self.Board[3].occupied == 'O' &&
+	self.Board[6].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	} else if (self.Board[1].occupied == 'O' &&
+	self.Board[4].occupied == 'O' &&
+	self.Board[7].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	} else if (self.Board[2].occupied == 'O' &&
+	self.Board[5].occupied == 'O' &&
+	self.Board[8].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	} else if (self.Board[0].occupied == 'X' &&
+	self.Board[4].occupied == 'X' &&
+	self.Board[8].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[2].occupied == 'X' &&
+	self.Board[4].occupied == 'X' &&
+	self.Board[6].occupied == 'X') {
+		console.log("Player X WINS!!!!!!!!!");
+	} else if (self.Board[0].occupied == 'O' &&
+	self.Board[4].occupied == 'O' &&
+	self.Board[8].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	} else if (self.Board[2].occupied == 'O' &&
+	self.Board[4].occupied == 'O' &&
+	self.Board[6].occupied == 'O') {
+		console.log("Player O WINS!!!!!!!!!");
+	}
+};
+
 // Create a claimCell function : This one works
 self.click = function(index) {if (self.Board[index].occupied == null){
 	self.Board[index].occupied = currentIcon;
 	numberOfMoves = numberOfMoves + 1
-	// checkWinner()
+	checkWinner()
 	changePlayers()
 	iconDefine()
 	console.log('xxx') }
 }
 
-// Trying another function to check winner
 
-// function checkWinner() {
-// 	if (self.Board[0].occupied == 'X' &&
-// 	self.Board[1].occupied == 'X' &&
-// 	self.Board[2].occupied == 'X') {
-// 		console.log(X WINS!!!!!!!!!)
-// 	}
-// };
 
 
 // Function to get winner - new and experimental
 
  // function getWinner(){
  // 	if (self.Board[0].occupied == 'X' &&
- // 		self.Board[3].occupied == 'X' &&
- // 		self.Board[6].occupied == 'X') {
+ // 		self.Board[1].occupied == 'X' &&
+ // 		self.Board[2].occupied == 'X') {
 	// console.log(X WINS!!!!!!!!!)
  // 	}
  // };

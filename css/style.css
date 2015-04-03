@@ -18,7 +18,7 @@ h1 {
 }
 
 #container {
-	border: 5px orange solid;
+	/*border: 5px orange solid;*/
 	position: relative;
 	overflow: hidden;
 	width: 1400px;
@@ -74,7 +74,6 @@ h1 {
 	height: 100%;
 	background-position: relative;
 	background-image: url("../images/Jukebox_4_M4.jpg");
-	/*background-size: cover;*/
 	background-repeat: no-repeat;
 	border: 2px #95a5a6 solid;
 	opacity: .9;
@@ -127,6 +126,41 @@ h1 {
 	border: 2px #95a5a6 solid;
 	opacity: .9;
 	background-color: black;
+}
+
+#player2display h1 {
+	display: block;
+	font-size: 80px;
+	color: white;
+	text-align: center;
+	margin-top: 200px;
+	margin-bottom: 0px;
+}
+
+#player2display h2 {
+	display: block;
+	font-size: 75px;
+	color: white;
+	text-align: center;
+	margin-top: 63px;
+	margin-bottom: 0px;
+}
+
+#player2display p {
+	display: block;
+	font-size: 32px;
+	color: white;
+	text-align: center;
+	margin-top: 19px;
+}
+
+#player2display input {
+	position: relative;
+	/*bottom:0px;*/
+	margin-top: 190px;
+	margin-left: 70px;
+	height:30px;
+	width:200px;
 }
 
 /*.x_occupied {
